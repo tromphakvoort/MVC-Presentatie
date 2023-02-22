@@ -1,0 +1,11 @@
+@using MVC_Presentatie.Models
+@{
+    Post post = ViewBag.Post;
+}
+@{
+    ViewData["Title"] = @post.Title;
+}
+
+<h1>@post.Title</h1>
+<p>@post.Body</p>
+<hr />

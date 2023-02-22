@@ -1,0 +1,21 @@
+@using MVC_Presentatie.Models
+
+@{
+    ViewData["Title"] = "Blog Post";
+}
+
+<h1>Blog Posts</h1>
+<hr />
+
+
+@{
+    foreach (Post post in ViewBag.Posts)
+    {
+        <div>
+            <h2><a href="/Post/BlogPost/@post.Id">@post.Title</a></h2>
+            <p>@post.Body</p>
+        </div>
+        
+        <hr />
+    }
+}
