@@ -7,5 +7,8 @@
 }
 
 <h1>@post.Title</h1>
+<a href="@Url.Action("BlogPost", "Post", new { id = @post.Id })">
+    <h1>@post.Title</h1>
+</a>
 <p>@post.Body</p>
 <hr />
